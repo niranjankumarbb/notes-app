@@ -11,7 +11,7 @@ const configuredb = () => {
         .catch((err) => {
             console.log(err)
         })
-}   
+  }   
 
 module.exports = configuredb   
  

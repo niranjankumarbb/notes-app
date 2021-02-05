@@ -1,7 +1,6 @@
 const Category = require('../models/category')
 
-// get all categories
-module.exports.list = (req, res) => {
+ module.exports.list = (req, res) => {
     Category.find()
         .then((categories) => {
             res.json(categories)
@@ -9,9 +8,9 @@ module.exports.list = (req, res) => {
         .catch((err) => {
             res.json(err)
         })  
-}
+  }
 
-module.exports.create = (req,res)=>{
+ module.exports.create = (req,res)=>{
     const body = req.body
     const category= new Category(body)
     category.save( )
