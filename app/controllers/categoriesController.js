@@ -13,7 +13,7 @@ const Category = require('../models/category')
  module.exports.create = (req,res)=>{
     const body = req.body
     const category= new Category(body)
-    category.save( )
+    category.save()
     .then((category)=>{
         res.json(category)
     })
