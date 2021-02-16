@@ -30,6 +30,5 @@ const userSchema = new Schema({
          maxlength : [64, 'Too Long']
      }
 })
-
 const User = mongoose.model('User', userSchema)
 module.exports = User 
