@@ -35,7 +35,7 @@ const Category = require('../models/category')
      .catch((err)=>{
          res.json(err)
      })
- }
+  }
 
  module.exports.update = (req,res)=>{
      const id = req.params.id
@@ -51,7 +51,7 @@ const Category = require('../models/category')
      .catch((err)=>{
         res.json(err)
      })
- }
+  }
 
  module.exports.destroy = (req,res)=>{
      const id = req.params.id
@@ -66,4 +66,4 @@ const Category = require('../models/category')
      .catch((err)=>{
          res.json(err)
      })
- }
+  }
